@@ -1,0 +1,36 @@
+body {
+	width:1000px;
+	background-color: black;
+}
+
+h1 {
+	color: white;
+	text-align: center;
+	margin-left: 400px;
+}
+
+img{
+  display: block;
+  margin-left: 100px;
+  height: 600px;
+}
+
+button {
+	background-color: black;
+	border: none;
+	margin-left: 600px;
+	height: 40px;
+	width: 200px;
+}
+
+button:hover {
+	background-color: red;
+
+}
+
+a {
+	text-decoration: none;
+	color: white;
+	font-size: 15px;
+}
+

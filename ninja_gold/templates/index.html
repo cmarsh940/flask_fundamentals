@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Ninja Gold</title>
+  <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+	<h1>Your Gold: {{gold}}</h1>
+	<form action = "/process_money" class = "option" method = "post">
+		<h3>Farm</h3>
+		<p>(earns 10-20 gold)</p>
+		<input type = "hidden" name="action" value = "farm">
+		<input type = "submit" value = "Find Gold!">
+	</form>
+	<form action = "/process_money" class = "option" method = "post">
+		<h3>Cave</h3>
+		<p>(earns 5-10 gold)</p>
+		<input type = "hidden" name="action" value = "cave">
+		<input type = "submit" value = "Find Gold!">
+	</form>
+	<form action = "/process_money" class = "option" method = "post">
+	<h3>House</h3>
+		<p>(earns 2-5 gold)</p>
+		<input type = "hidden" name="action" value = "house">
+		<input type = "submit" value = "Find Gold!">
+	</form>
+	<form action = "/process_money" class = "option" method = "post">
+		<h3>Casino</h3>
+		<p>(earns/takes 0-50 gold)</p>
+		<input type = "hidden" name="action" value = "casino">
+		<input type = "submit" value = "Find Gold!">
+	</form>
+	<div id = "results">
+		<h2>Activies:</h2>
+		{% for i in results: %}
+		<p>{{ i }}</p>
+		{% endfor %}
+	</div>
+	<button><a href = "/reset">Reset</a></button>
+</body>
+</html>

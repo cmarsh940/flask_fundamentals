@@ -1,0 +1,27 @@
+/*  css reset */
+* {
+	padding: 0px;
+	margin: 15px;
+}
+
+h1 {
+	text-align: center;
+	text-decoration: underline;
+	margin: 10px;
+}
+
+button {
+	text-decoration: none;
+	background-color: black;
+	height: 40px;
+	width: 100px;
+}
+
+a {
+	color: white;
+}
+
+img, button {
+	margin: auto;
+	display: block;
+}

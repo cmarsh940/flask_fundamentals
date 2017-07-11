@@ -1,0 +1,25 @@
+/*  css reset */
+* {
+	padding: 0px;
+	margin: 5px;
+}
+
+img, button {
+	display: block;
+}
+
+button {
+	border: none;
+	width: 100px;
+	height: 40px;
+	background-color: green;
+}
+
+a {
+	color: white;
+}
+
+h1 	{
+	text-align: center;
+	text-decoration: underline;
+}
